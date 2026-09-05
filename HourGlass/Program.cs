@@ -7,7 +7,7 @@ int[,] matrix = new int[order, order];
 // Fill the matrix with values
 for (int i = 0; i < order; i++)
 {
-    for (int j = 0; j < order   ; j++)
+    for (int j = 0; j < order; j++)
     {
         matrix[i, j] = i + j;
     }
@@ -18,19 +18,20 @@ for (int i = 0; i < order; i++)
 {
     for (int j = 0; j < order; j++)
     {
-        Console.Write(matrix[i, j]+"\t");
+        Console.Write(matrix[i, j] + "\t");
     }
     Console.WriteLine();
 }
 
-// Print the lower triangular matrix
+// Print the hourglass pattern
+Console.WriteLine("HOUR GLASS");
 for (int i = 0; i < order; i++)
 {
     for (int j = 0; j < order; j++)
     {
-        if (i >= j)
+        if (i <= j && i + j < order || i >= j && i + j >= order - 1)
         {
-            Console.Write(matrix[i, j]+"\t");
+            Console.Write(matrix[i, j] + "\t");
         }
         else
         {

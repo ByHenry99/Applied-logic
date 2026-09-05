@@ -2,7 +2,9 @@
   <Folder Name="/31/">
     <Project Path="LowerTriangular/LowerTriangular.csproj" />
   </Folder>
-  <Folder Name="/34/" />
+  <Folder Name="/34/">
+    <Project Path="HourGlass/HourGlass.csproj" />
+  </Folder>
   <Folder Name="/Shared/">
     <Project Path="Shared/Shared.csproj" />
   </Folder>
