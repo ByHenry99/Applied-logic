@@ -9,11 +9,15 @@ for (int i = 0; i < order; i++)
 {
     for (int j = 0; j < order; j++)
     {
-        matrix[i, j] = i + j;
+        if (i <= j && i + j < order || i >= j && i + j >= order - 1)
+        {
+            matrix[i, j] = i + 2 * j;
+        }
     }
 }
 
 // Print the matrix
+Console.WriteLine("Completed Matrix");
 for (int i = 0; i < order; i++)
 {
     for (int j = 0; j < order; j++)

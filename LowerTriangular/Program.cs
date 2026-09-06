@@ -7,7 +7,7 @@ int[,] matrix = new int[order, order];
 // Fill the matrix with values
 for (int i = 0; i < order; i++)
 {
-    for (int j = 0; j < order   ; j++)
+    for (int j = 0; j < order; j++)
     {
         matrix[i, j] = i + j;
     }
